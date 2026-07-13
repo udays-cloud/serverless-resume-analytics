@@ -74,3 +74,15 @@ document.getElementById("visitorCount").innerHTML = "1";
 document.getElementById("country").innerHTML = "India";
 
 document.getElementById("device").innerHTML = "Desktop";
+
+// Temporary Contact Form
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    alert("Thank you! AWS backend will be connected in the next phase.");
+
+});
