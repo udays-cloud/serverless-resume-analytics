@@ -296,3 +296,48 @@ body{
     color:#FF9900;
 
 }
+/* Analytics */
+
+.analytics-section{
+
+    background:#f7f9fc;
+
+}
+
+.analytics-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.analytics-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.analytics-card h1{
+
+    color:#FF9900;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+}
+
+.analytics-card h3{
+
+    color:#232F3E;
+
+}

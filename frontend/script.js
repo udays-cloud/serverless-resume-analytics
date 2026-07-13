@@ -65,3 +65,12 @@ function eraseEffect(){
 }
 
 typeEffect();
+
+
+// Temporary data until AWS backend is connected
+
+document.getElementById("visitorCount").innerHTML = "1";
+
+document.getElementById("country").innerHTML = "India";
+
+document.getElementById("device").innerHTML = "Desktop";
