@@ -189,3 +189,110 @@ body{
     font-size:15px;
 
 }
+/* Projects */
+
+.projects-section{
+    background:#f8f9fb;
+}
+
+.project-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    height:100%;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.project-card h3{
+    color:#232F3E;
+    margin-bottom:20px;
+}
+
+.tech-badges{
+    margin-top:15px;
+}
+
+.tech-badges span{
+    display:inline-block;
+    background:#FF9900;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+}
+/* Architecture Section */
+
+.architecture-section{
+
+    background:#eef4fb;
+
+}
+
+.architecture-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.architecture-flow{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.aws-box{
+
+    width:280px;
+
+    padding:18px;
+
+    background:#232F3E;
+
+    color:white;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.aws-box:hover{
+
+    background:#FF9900;
+
+    transform:scale(1.05);
+
+}
+
+.arrow{
+
+    font-size:30px;
+
+    margin:12px 0;
+
+    color:#FF9900;
+
+}
