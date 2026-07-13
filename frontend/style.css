@@ -1,69 +1,63 @@
-body{
+/* About Section */
 
-    background:#f5f7fb;
+.about-section{
 
-    font-family:'Segoe UI',sans-serif;
+    background:#f7f9fc;
 
-}
-
-.hero{
-
-    min-height:90vh;
-
-    display:flex;
-
-    align-items:center;
-
-    background:linear-gradient(135deg,#232F3E,#37475A);
-
-    color:white;
+    color:#333;
 
 }
 
-.profile-image{
+.section-title{
 
-    width:280px;
+    font-size:42px;
 
-    height:280px;
+    font-weight:bold;
 
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:6px solid #FF9900;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.4);
+    color:#232F3E;
 
 }
 
-.typing-text{
+.section-subtitle{
 
-    color:#FF9900;
-
-    min-height:45px;
+    color:#777;
 
 }
 
-.btn{
+.about-card{
 
-    border-radius:50px;
+    background:white;
 
-}
+    padding:35px;
 
-.navbar{
+    border-radius:20px;
 
-    background:#232F3E;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-}
+    height:100%;
 
-.nav-link{
-
-    color:white !important;
+    transition:.3s;
 
 }
 
-.nav-link:hover{
+.about-card:hover{
 
-    color:#FF9900 !important;
+    transform:translateY(-8px);
+
+}
+
+.about-card h3,
+
+.about-card h4{
+
+    color:#232F3E;
+
+}
+
+.about-card li{
+
+    margin-bottom:18px;
+
+    font-size:18px;
 
 }
