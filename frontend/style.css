@@ -1,3 +1,72 @@
+body{
+
+    background:#f5f7fb;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#232F3E,#37475A);
+
+    color:white;
+
+}
+
+.profile-image{
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #FF9900;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.typing-text{
+
+    color:#FF9900;
+
+    min-height:45px;
+
+}
+
+.btn{
+
+    border-radius:50px;
+
+}
+
+.navbar{
+
+    background:#232F3E;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+}
+
+.nav-link:hover{
+
+    color:#FF9900 !important;
+
+}
 /* About Section */
 
 .about-section{
@@ -59,5 +128,64 @@
     margin-bottom:18px;
 
     font-size:18px;
+
+}
+/* Skills Section */
+
+.skills-section{
+
+    background:#eef3f8;
+
+}
+
+.skill-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.skill-icon{
+
+    font-size:55px;
+
+    color:#FF9900;
+
+    margin-bottom:20px;
+
+}
+
+.skill-card h4{
+
+    color:#232F3E;
+
+    margin-bottom:15px;
+
+}
+
+.skill-card p{
+
+    color:#555;
+
+    font-size:15px;
 
 }
