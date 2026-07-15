@@ -66,20 +66,84 @@ function eraseEffect(){
 
 typeEffect();
 
+// ================= Visitor Counter =================
 
-// Temporary data until AWS backend is connected
+const API_URL =
+"https://qirpi9e0s0.execute-api.ap-south-1.amazonaws.com/visitor";
 
-document.getElementById("visitorCount").innerHTML = "1";
+async function getVisitorCount() {
 
-document.getElementById("country").innerHTML = "India";
+    try {
 
-document.getElementById("device").innerHTML = "Desktop";
+        const response = await fetch(API_URL);
 
-// Temporary Contact Form
+        const data = await response.json();
+
+        document.getElementById("visitorCount").textContent =
+        data.visitorCount;
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+        document.getElementById("visitorCount").textContent = "Error";
+
+    }
+
+}
+
+getVisitorCount();
+
+async function getCountry(){
+
+    try{
+
+        const response = await fetch("https://ipapi.co/json/");
+
+        const data = await response.json();
+
+        document.getElementById("country").textContent =
+        data.country_name;
+
+    }
+
+    catch{
+
+        document.getElementById("country").textContent = "Unknown";
+
+    }
+
+}
+
+getCountry();
+
+function getDevice(){
+
+    let device = "Desktop";
+
+    if(/Mobi|Android/i.test(navigator.userAgent)){
+
+        device = "Mobile";
+
+    }
+
+    else if(/Tablet|iPad/i.test(navigator.userAgent)){
+
+        device = "Tablet";
+
+    }
+
+    document.getElementById("device").textContent = device;
+
+}
+
+getDevice();
 
 document
 .getElementById("contactForm")
-.addEventListener("submit", function(event){
+.addEventListener("submit",function(event){
 
     event.preventDefault();
 
