@@ -139,14 +139,58 @@ function getDevice(){
 
 }
 
-getDevice();
+const CONTACT_API =
+"https://r82npgpoue.execute-api.ap-south-1.amazonaws.com/contact";
 
 document
 .getElementById("contactForm")
-.addEventListener("submit",function(event){
+.addEventListener("submit", async function(event){
 
     event.preventDefault();
 
-    alert("Thank you! AWS backend will be connected in the next phase.");
+    const name =
+        document.querySelector('input[type="text"]').value;
+
+    const email =
+        document.querySelector('input[type="email"]').value;
+
+    const message =
+        document.querySelector('textarea').value;
+
+    try{
+
+        const response = await fetch(CONTACT_API,{
+
+            method:"POST",
+
+            headers:{
+                "Content-Type":"application/json"
+            },
+
+            body:JSON.stringify({
+
+                name:name,
+                email:email,
+                message:message
+
+            })
+
+        });
+
+        const data = await response.json();
+
+        alert(data.message);
+
+        document.getElementById("contactForm").reset();
+
+    }
+
+    catch(error){
+
+        console.error(error);
+
+        alert("Unable to send message.");
+
+    }
 
 });
