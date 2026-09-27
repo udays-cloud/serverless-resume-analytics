@@ -1,7 +1,7 @@
 
 ---
 
-# 3. The images are important
+# The images are important
 
 Don't just upload random screenshots. For a **professional AWS portfolio**, I recommend these 8 images:
 
@@ -32,7 +32,7 @@ Your **AWS account ID** is generally not treated like a secret credential, but f
 
 ---
 
-# 4. Architecture image
+# Architecture image
 
 For the architecture image, don't use a basic homemade diagram.
 
@@ -72,6 +72,61 @@ Use official AWS Architecture Icons and make it look like:
                                          ▼
 
 
+# 🚀 Serverless Resume Analytics Platform
+
+> A production-deployed serverless resume portfolio built on AWS.
+
+## 🌐 Live Application
+
+### 🔗 [Visit My Live Portfolio](YOUR_CLOUDFRONT_URL)
+
+The application is deployed on AWS and accessible through Amazon CloudFront.
+
+### ✨ Live Features
+
+- 📄 Personal portfolio and resume
+- 👀 Real-time visitor counter
+- 🌍 Visitor analytics
+- 💻 Device detection
+- 📩 Contact form
+- ✉️ Email notifications
+- 🔐 HTTPS
+- ☁️ Serverless AWS backend
+- 🚀 Automated CI/CD deployment
+
+---
+
+## 🏗️ AWS Architecture
+
+![AWS Architecture](docs/architecture.png)
+
+### Architecture Flow
+
+Visitor  
+↓  
+Amazon CloudFront  
+↓  
+Amazon S3  
+↓  
+JavaScript  
+↓  
+Amazon API Gateway  
+↓  
+AWS Lambda  
+↓  
+Amazon DynamoDB  
+
+Contact Form:
+
+Visitor  
+↓  
+API Gateway  
+↓  
+Lambda  
+↓  
+DynamoDB  
+↓  
+Amazon SES
 
 ---
 
