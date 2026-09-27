@@ -2,23 +2,58 @@
 
 > A serverless resume portfolio and analytics platform built and deployed using AWS.
 
-## 📸 Project Demo
+## 📌 Project Overview
 
-This project demonstrates a serverless personal portfolio with visitor analytics, contact form processing, email notifications, and automated deployment.
+This project is a serverless personal portfolio and resume analytics platform built using AWS.
 
-### 🌐 Portfolio Website
+It demonstrates:
 
-![Portfolio Website](screenshots/live-website-1.png)
-
-![Portfolio Website](screenshots/live-website-2.png)
-
-![Portfolio Website](screenshots/live-website-3.png)
+- 🌐 Static website hosting
+- 👥 Visitor analytics
+- 📊 Visitor counting
+- 📩 Contact form processing
+- 📧 Email notifications
+- 🔐 HTTPS delivery
+- ☁️ Serverless backend architecture
+- ⚙️ Automated deployment using GitHub Actions
 
 ---
 
-## 🏗️ AWS Architecture
+# 📸 Project Demo
 
-### Architecture Flow
+## 🌐 Portfolio Website
+
+### Home Page
+
+![Portfolio Website](screenshots/live-website-1.png)
+
+### About / Resume Section
+
+![Portfolio Website](screenshots/live-website-2.png)
+
+### Skills / Certifications
+
+![Portfolio Website](screenshots/live-website-3.png)
+
+### Projects Section
+
+![Portfolio Website](screenshots/live-website-4.png)
+
+### Contact Section
+
+![Portfolio Website](screenshots/live-website-5.png)
+
+### Visitor Analytics
+
+![Portfolio Website](screenshots/live-website-6.png)
+
+### Additional Portfolio View
+
+![Portfolio Website](screenshots/live-website-7.png)
+
+---
+
+# 🏗️ AWS Architecture
 
 ```text
                          Visitor
@@ -48,71 +83,3 @@ This project demonstrates a serverless personal portfolio with visitor analytics
                                       │
                                       ▼
                                   Amazon SES
-
-## ☁️ AWS Deployment Screenshots
-
-### Amazon S3 — Static Website Hosting
-
-![Portfolio Website](screenshots/screenshots/s3.png)
-
-S3 was used to host the static frontend of the resume portfolio.
-
----
-
-### Amazon CloudFront — CDN & HTTPS
-
-![Portfolio Website](screenshots/cloudfront.png)
-
-
-CloudFront provides CDN distribution and HTTPS access for the portfolio.
-
----
-
-### API Gateway — Visitor Analytics API
-
-
-![Portfolio Website](screenshots/api-gateway.png)
-
-API Gateway exposes the serverless backend endpoint used by the portfolio.
-
----
-
-### AWS Lambda — Serverless Backend
-
-
-![Portfolio Website](screenshots/aws-lambda.png)
-
-Lambda processes visitor analytics and backend requests without managing servers.
-
----
-
-### AWS Lambda Configuration
-
-![Portfolio Website](screenshots/lambda.png)
-
-Lambda configuration and deployment details.
-
----
-
-### Amazon DynamoDB — Data Storage
-
-
-![Portfolio Website](screenshots/dynamodb.png)
-
-DynamoDB stores visitor analytics and application data.
-
----
-
-### Amazon SES — Email Notifications
-
-![Amazon SES](screenshots/ses.png)
-![Portfolio Website](screenshots/ses.png)
-
-Amazon SES is used for sending email notifications from the contact form.
-
----
-Software Development Engineer Aspirant | AWS | Cloud | Cybersecurity
-
-GitHub: udays-cloud
-LinkedIn: Uday Kiran
-Email: udayskirangitpynum@gmail.com
