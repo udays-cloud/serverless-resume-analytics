@@ -49,193 +49,63 @@ This project demonstrates a serverless personal portfolio with visitor analytics
                                       ▼
                                   Amazon SES
 
-☁️ AWS Services Used
-AWS Service	Purpose
-Amazon S3	Static website hosting
-Amazon CloudFront	CDN and HTTPS
-Amazon API Gateway	Backend APIs
-AWS Lambda	Serverless backend processing
-Amazon DynamoDB	Visitor and contact data storage
-Amazon SES	Email notifications
-AWS IAM	Access control
-Amazon CloudWatch	Monitoring and logs
-GitHub Actions	CI/CD deployment
-📊 AWS Deployment
-Amazon S3
+## ☁️ AWS Deployment Screenshots
 
-Amazon S3 is used to host the frontend static website files.
+### Amazon S3 — Static Website Hosting
 
-Amazon CloudFront
+![Amazon S3](screenshots/s3.png)
 
-Amazon CloudFront provides content delivery and HTTPS access for the portfolio.
+S3 was used to host the static frontend of the resume portfolio.
 
-Amazon API Gateway
+---
 
-API Gateway exposes the backend APIs used by the frontend.
+### Amazon CloudFront — CDN & HTTPS
 
-AWS Lambda
+![Amazon CloudFront](screenshots/cloudfront.png)
 
-AWS Lambda handles the serverless backend logic.
+CloudFront provides CDN distribution and HTTPS access for the portfolio.
 
-Amazon DynamoDB
+---
 
-DynamoDB stores visitor analytics and contact form information.
+### API Gateway — Visitor Analytics API
 
-Amazon SES
+![API Gateway](screenshots/api-gateway.png)
 
-Amazon SES is used to send contact form email notifications.
+API Gateway exposes the serverless backend endpoint used by the portfolio.
 
-👀 Visitor Analytics
+---
 
-The portfolio includes a serverless visitor counter.
+### AWS Lambda — Serverless Backend
 
-Visitor
-   ↓
-Portfolio Website
-   ↓
-JavaScript
-   ↓
-API Gateway
-   ↓
-Lambda
-   ↓
-DynamoDB
-   ↓
-Visitor Count
+![AWS Lambda](screenshots/aws-lambda.png)
 
-The visitor count is stored and updated using Amazon DynamoDB through an AWS Lambda function.
+Lambda processes visitor analytics and backend requests without managing servers.
 
-📩 Contact Form
+---
 
-The contact form uses a serverless backend.
+### AWS Lambda Configuration
 
-Visitor
-   ↓
-Contact Form
-   ↓
-API Gateway
-   ↓
-Lambda
-   ↓
-DynamoDB
-   ↓
-Amazon SES
-   ↓
-Email Notification
-🚀 CI/CD Pipeline
+![Lambda Configuration](screenshots/lambda.png)
 
-The frontend deployment is automated using GitHub Actions.
+Lambda configuration and deployment details.
 
-Developer
-    │
-    ▼
-Git Push
-    │
-    ▼
-GitHub Repository
-    │
-    ▼
-GitHub Actions
-    │
-    ▼
-Amazon S3
-    │
-    ▼
-CloudFront
-    │
-    ▼
-Portfolio Website
+---
 
-🖥️ Project Screenshots
-Portfolio
+### Amazon DynamoDB — Data Storage
 
-🛠️ Technologies
-Frontend
-HTML5
-CSS3
-JavaScript
-Bootstrap
-Font Awesome
-Backend
-Python
-AWS Lambda
-Amazon API Gateway
-Amazon DynamoDB
-AWS
-Amazon S3
-Amazon CloudFront
-Amazon SES
-AWS IAM
-Amazon CloudWatch
-DevOps
-Git
-GitHub
-GitHub Actions
-CI/CD
-📁 Repository Structure
-Serverless-Resume-Analytics/
-│
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-│
-├── frontend/
-│   ├── assets/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── lambda/
-│
-├── screenshots/
-│   ├── api-gateway.png
-│   ├── aws-lambda.png
-│   ├── cloudfront.png
-│   ├── dynamodb.png
-│   ├── github-actions.png
-│   ├── lambda.png
-│   ├── live-website-1.png
-│   ├── live-website-2.png
-│   ├── live-website-3.png
-│   ├── live-website-4.png
-│   ├── live-website-5.png
-│   ├── live-website-6.png
-│   ├── live-website-7.png
-│   ├── s3.png
-│   ├── ses.png
-│   └── ses-2.png
-│
-├── .gitignore
-└── README.md
-🔐 Security Considerations
-IAM permissions are used to control AWS resources.
-HTTPS is provided through CloudFront.
-AWS credentials are not stored in the frontend.
-GitHub Actions secrets are used for deployment credentials.
-Sensitive credentials and secrets are excluded from the repository.
+![DynamoDB](screenshots/dynamodb.png)
 
-Never commit AWS secret keys, access keys, passwords, tokens, or other sensitive credentials to GitHub.
+DynamoDB stores visitor analytics and application data.
 
-🎯 Key Learning Outcomes
+---
 
-This project provided hands-on experience with:
+### Amazon SES — Email Notifications
 
-Serverless architecture
-AWS S3 static website hosting
-CloudFront
-API Gateway
-AWS Lambda
-DynamoDB
-Amazon SES
-IAM
-CloudWatch
-GitHub Actions
-CI/CD
-REST API integration
-Cloud-based application deployment
-👨‍💻 Author
-Uday Kiran
+![Amazon SES](screenshots/ses.png)
 
+Amazon SES is used for sending email notifications from the contact form.
+
+---
 Software Development Engineer Aspirant | AWS | Cloud | Cybersecurity
 
 GitHub: udays-cloud
