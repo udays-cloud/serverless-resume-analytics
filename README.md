@@ -53,7 +53,7 @@ This project demonstrates a serverless personal portfolio with visitor analytics
 
 ### Amazon S3 — Static Website Hosting
 
-![Amazon S3](screenshots/s3.png)
+![Portfolio Website](screenshots/screenshots/s3.png)
 
 S3 was used to host the static frontend of the resume portfolio.
 
@@ -61,7 +61,8 @@ S3 was used to host the static frontend of the resume portfolio.
 
 ### Amazon CloudFront — CDN & HTTPS
 
-![Amazon CloudFront](screenshots/cloudfront.png)
+![Portfolio Website](screenshots/cloudfront.png)
+
 
 CloudFront provides CDN distribution and HTTPS access for the portfolio.
 
@@ -69,7 +70,8 @@ CloudFront provides CDN distribution and HTTPS access for the portfolio.
 
 ### API Gateway — Visitor Analytics API
 
-![API Gateway](screenshots/api-gateway.png)
+
+![Portfolio Website](screenshots/api-gateway.png)
 
 API Gateway exposes the serverless backend endpoint used by the portfolio.
 
@@ -77,7 +79,8 @@ API Gateway exposes the serverless backend endpoint used by the portfolio.
 
 ### AWS Lambda — Serverless Backend
 
-![AWS Lambda](screenshots/aws-lambda.png)
+
+![Portfolio Website](screenshots/aws-lambda.png)
 
 Lambda processes visitor analytics and backend requests without managing servers.
 
@@ -85,7 +88,7 @@ Lambda processes visitor analytics and backend requests without managing servers
 
 ### AWS Lambda Configuration
 
-![Lambda Configuration](screenshots/lambda.png)
+![Portfolio Website](screenshots/lambda.png)
 
 Lambda configuration and deployment details.
 
@@ -93,7 +96,8 @@ Lambda configuration and deployment details.
 
 ### Amazon DynamoDB — Data Storage
 
-![DynamoDB](screenshots/dynamodb.png)
+
+![Portfolio Website](screenshots/dynamodb.png)
 
 DynamoDB stores visitor analytics and application data.
 
@@ -102,6 +106,7 @@ DynamoDB stores visitor analytics and application data.
 ### Amazon SES — Email Notifications
 
 ![Amazon SES](screenshots/ses.png)
+![Portfolio Website](screenshots/ses.png)
 
 Amazon SES is used for sending email notifications from the contact form.
 
