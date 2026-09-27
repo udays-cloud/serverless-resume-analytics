@@ -18,8 +18,6 @@ This project demonstrates a serverless personal portfolio with visitor analytics
 
 ## 🏗️ AWS Architecture
 
-![AWS Architecture](screenshots/architecture.png)
-
 ### Architecture Flow
 
 ```text
